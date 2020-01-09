@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.banderoll {
+    color: black;
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.huvud {
+    border: 5px solid #66ff66;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.rubrik {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 100px;
+    padding-top: 15px;
+}
+.huvudLoga img {
+    width: 15rem;
+    height: 5rem;
+    padding-top: 5px;
+}
+.köp {
+    font-size: 3rem;
+    padding-right: 50px;
+    padding-top: 15px;
+    color: #009b40;
+}
+.menyUl {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menyLi {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px 15px;
+    display: block;
+}
+.menyLi a {
+    display: block;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-decoration: none;
+}
+.desktopMeny {
+    background-color: #66ff66;
+}
+.menyLi a:hover {
+    background-color: white;
+    color: black;
+}
+.mobilMeny {
+    display: none;
+}
+
+@media (max-width:768px) {
+    nav.mMeny, .desktopMeny, .köp, .banderoll {
+        display: none;
+    }
+    button + nav.mMeny:active, button:focus+ nav.mMeny {
+        display: contents;
+    }
+    .banderoll {
+        display: flex;
+        justify-content: center;
+    }
+    .huvud {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .rubrik {
+        font-size: 2rem;
+    }
+    .mobilMeny .menyKnapp {
+        background-color: #66ff66;
+        font-size: 2rem;
+        width: 100%;
+        color: black;
+        border-radius: 20px;
+        border: none;
+    }
+    .ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
