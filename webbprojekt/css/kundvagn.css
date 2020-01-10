@@ -1,0 +1,44 @@
+.KundvagnProdukter {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 5px #66ff66;
+    list-style: none;
+    margin-top: 3rem;
+}
+.KundvagnProdukter img {
+    width: 3rem;
+    height: 7rem;
+}
+.KundvagnBetala {
+    display: flex;
+    justify-content: center;
+}
+.kundvagnKöp {
+    box-shadow: 0.5rem 0.5rem 3rem rgb(0,0,0,0.2);
+    padding: 10px 30px;
+    background-color: rgb(64, 65, 64);
+    border-radius: 20px;
+    color: white;
+    margin: 2rem;
+}
+.KundvagnProdukter p {
+    padding-top: 3rem;
+    padding-right: 1rem;
+}
+.kundvagnNamn {
+    display: flex;
+    text-decoration: none;
+}
+@media (min-width: 768px){
+
+    .KundvagnProdukter {
+        margin-left: 10%;
+        width: 80%;
+        border: solid 5px #66ff66;
+        border-radius: 10px;
+    }
+    .kundvagnNamn {
+        display: flex;
+        text-decoration: none;
+    }
+}
